@@ -22,6 +22,7 @@ def browser(request):
     else:
         raise pytest.UsageError('Unknown browser! Chrome or Firefox expected.')
     yield browser
+
     print(f'/nQuit {browser_name} browser.')
     browser.quit()
-
+#   this string for Git test

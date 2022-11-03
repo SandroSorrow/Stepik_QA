@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 
-
+#   this string for Git test
 class MainPageLocators():
     LOGIN_PAGE = (By.CSS_SELECTOR, "#login_link")
 
