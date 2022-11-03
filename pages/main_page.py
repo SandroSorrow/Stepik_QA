@@ -3,7 +3,7 @@ from .base_page import BasePage
 from .locators import MainPageLocators as Locators
 from .login_page import LoginPage
 
-#   this string for Git test
+
 class MainPage(BasePage):
     def go_to_login_page(self):
         login_link = self.browser.find_element(*Locators.LOGIN_PAGE)

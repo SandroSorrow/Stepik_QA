@@ -25,4 +25,4 @@ def browser(request):
 
     print(f'/nQuit {browser_name} browser.')
     browser.quit()
-#   this string for Git test
+

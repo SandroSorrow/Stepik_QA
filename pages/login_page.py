@@ -1,7 +1,7 @@
 from .base_page import BasePage
 from .locators import LoginPageLocators as Locators
 
-#   this string for Git test
+
 class LoginPage(BasePage):
     def should_be_login_page(self):
         self.should_be_login_url()
