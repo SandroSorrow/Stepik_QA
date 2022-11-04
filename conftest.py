@@ -14,15 +14,16 @@ def browser(request):
     browser_name = request.config.getoption("browser_name")
     browser = None
     if browser_name.lower() == 'chrome':
-        print('/nStart Google Chrome browser...')
+        print('\nStart Google Chrome browser...\n')
         browser = webdriver.Chrome()
     elif browser_name.lower() == 'firefox':
-        print('/nStar Mozilla Firefox browser...')
+        print('\nStar Mozilla Firefox browser...\n')
         browser = webdriver.Firefox()
     else:
-        raise pytest.UsageError('Unknown browser! Chrome or Firefox expected.')
+        raise pytest.UsageError('\nUnknown browser! Chrome or Firefox expected.\n')
     yield browser
 
-    print(f'/nQuit {browser_name} browser.')
+    print(f'\nQuit {browser_name} browser.\n')
+    # pause = input('Press any key: ')
     browser.quit()
 
