@@ -20,3 +20,5 @@ class ProductPageLocators():
 
     BASKET_PRODUCT_NAME = (By.CSS_SELECTOR, "#messages .alert:nth-child(1) > .alertinner > strong")
     BASKET_PRODUCT_PRICE = (By.CSS_SELECTOR, "#messages .alert-info strong")
+
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "#messages .alert:nth-child(2)")
