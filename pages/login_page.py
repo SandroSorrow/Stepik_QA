@@ -18,4 +18,3 @@ class LoginPage(BasePage):
         pass2_field.send_keys(password)
         submit = self.browser.find_element(*LoginPageLocators.REGISTER_SUBMIT)
         submit.click()
-

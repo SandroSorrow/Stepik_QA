@@ -10,8 +10,8 @@ class BasePageLocators:
 
 
 class BasketPageLocators:
-    EMPTY_BASKET_TEXT = (By.CSS_SELECTOR, "#content_inner > p")
     BASKET_SUMMARY = (By.CSS_SELECTOR, "#basket_formset")
+    EMPTY_BASKET_TEXT = (By.CSS_SELECTOR, "#content_inner > p")
 
 
 class MainPageLocators:
@@ -33,11 +33,8 @@ class LoginPageLocators:
 
 class ProductPageLocators:
     ADD_TO_BASKET = (By.CSS_SELECTOR, ".btn-add-to-basket")
-
-    PRODUCT_NAME = (By.CSS_SELECTOR, ".product_main>h1")
-    PRODUCT_PRICE = (By.CSS_SELECTOR, ".product_main>.price_color")
-
     BASKET_PRODUCT_NAME = (By.CSS_SELECTOR, "#messages .alert:nth-child(1) > .alertinner > strong")
     BASKET_PRODUCT_PRICE = (By.CSS_SELECTOR, "#messages .alert-info strong")
-
+    PRODUCT_NAME = (By.CSS_SELECTOR, ".product_main>h1")
+    PRODUCT_PRICE = (By.CSS_SELECTOR, ".product_main>.price_color")
     SUCCESS_MESSAGE = (By.CSS_SELECTOR, "#messages .alert:nth-child(2)")

@@ -39,6 +39,4 @@ def browser(request):
     yield browser
 
     print(f'\nQuit {browser_name} browser.\n')
-    # pause = input('Press any key: ')
     browser.quit()
-
